@@ -1,0 +1,13 @@
+source 'http://rubygems.org'
+
+gem 'rails', '~> 3'
+gem 'thin'
+gem 'unicorn'
+gem 'bundler'
+gem 'json'
+gem 'haml'
+gem 'capistrano', '2.15.5'
+gem 'rvm-capistrano'
+gem 'capistrano-unicorn'
+gem 'therubyracer'
+gem 'uglifier'

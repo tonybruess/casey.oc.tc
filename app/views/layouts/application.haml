@@ -1,0 +1,9 @@
+!!! 5
+%html
+    %head
+        %title Casey
+        %meta{:name => "viewport", :content => "width=500"}
+        = stylesheet_link_tag *Casey::Application.config.styles
+        = javascript_include_tag *Casey::Application.config.scripts
+    %body
+        = yield
