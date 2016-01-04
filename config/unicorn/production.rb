@@ -1,6 +1,6 @@
 pid "/home/deploy/apps/casey/shared/pids/unicorn.pid"
 
-listen 3003
+listen 3007
 worker_processes 1
 timeout 30
 preload_app true
