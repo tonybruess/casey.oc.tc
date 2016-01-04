@@ -1,9 +1,15 @@
 !!! 5
 %html
     %head
-        %title Casey
+        %title 2015 Giveaway Winners
         %meta{:name => "viewport", :content => "width=500"}
         = stylesheet_link_tag *Casey::Application.config.styles
         = javascript_include_tag *Casey::Application.config.scripts
     %body
-        = yield
+        .container
+            = yield
+        %footer.footer
+            .container
+                %p.text-muted
+                    Made by
+                    %a{:href => "https://tonybruess.com"} Tony Bruess
