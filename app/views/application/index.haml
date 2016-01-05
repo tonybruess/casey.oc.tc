@@ -1,14 +1,11 @@
-.page-header
+.page-header.center
     %h1
         2015 Giveaway Winners
 
-.center
-    %a.btn.btn-success.btn-lg{:href => "?winners"} Pick Winners
-    %br
-    %br
-    %small You can press this button multiple times, it will pick new winners every time.
-
-%br
+- if !@winners
+    .center
+        %form{:method => :post, :action => "/?winners"}
+            %input.btn.btn-success.btn-lg{:type => "submit", :value => "Pick Winners", :data => {"disable-with" => "Picking..."}}
 
 - if @winners
     .center

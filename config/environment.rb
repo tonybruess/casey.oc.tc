@@ -12,6 +12,7 @@ Casey::Application.config.styles = [
 
 Casey::Application.config.scripts = [
     "//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js",
+    "//cdnjs.cloudflare.com/ajax/libs/jquery-ujs/1.1.0/rails.min.js",
     "//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.2.0/js/bootstrap.min.js",
     "application",
 ]
