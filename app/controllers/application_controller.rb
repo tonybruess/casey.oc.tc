@@ -5,7 +5,7 @@ class ApplicationController < ActionController::Base
     def index
         return if !params.key?(:winners)
 
-        @num = 20
+        @num = 50
         @total = DB.size
         @winners = []
 
