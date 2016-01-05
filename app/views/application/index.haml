@@ -10,9 +10,12 @@
 - if @winners
     .center
         %p There were #{number_with_delimiter(@total)} entries. Picking #{@num} random numbers from 1 to #{number_with_delimiter(@total)}.
-    %dl.dl-horizontal
-        - @winners.each do |w|
-            %dt= number_with_delimiter(w[:num])
+    %dl.dl-horizontal.winners
+        - @winners.each_with_index do |w, i|
+            %dt
+                %h1.place #{i + 1}.
+                %p.num
+                    = number_with_delimiter(w[:num])
             %dd
                 %a{:href => w[:entry][:channel], :target => :blank}= w[:entry][:name]
                 left #{w[:entry][:total]} comment#{w[:entry][:total] == 1 ? "" : "s"}

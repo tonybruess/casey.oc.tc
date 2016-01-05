@@ -34,3 +34,16 @@ body {
 .center {
     text-align: center;
 }
+
+.winners {
+    vertical-align: top;
+}
+
+.winners .place {
+    float: left;
+    margin-top: 0;
+}
+
+.winners .num {
+    float: right;
+}
